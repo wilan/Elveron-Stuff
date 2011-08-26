@@ -20,7 +20,7 @@ public class Parser
 			ps.println(it.next());
 	}
 	
-	private Races kingdom;
+	private Race kingdom;
 	
 	public Parser() throws Exception
 	{
@@ -145,14 +145,14 @@ public class Parser
 	public boolean selectRaceManually() throws Exception
 	{
 		//select a race, 6 race per list + next
-		Scanner s = new Scanner(getClass().getResourceAsStream("/racelist.txt"));
 		TreeSet<String> races = new TreeSet();
 		
 		while(true)
 		{
 			races = new TreeSet();
-			while(s.hasNext())
-				races.add(s.next());
+			for(String r: Race.baseVals.keySet())
+				races.add(r);
+			
 			String[] racesArr = new String[races.size()+1];
 			int idx = 0;
 			Iterator<String> it = races.iterator();
@@ -178,17 +178,16 @@ public class Parser
 		return true;
 	}
 	
-	public Races NewRace(String r)
+	public Race NewRace(String r)
 	{
 		try
 		{
 			Class c = Class.forName(r);
-			return (Races)(c.newInstance());
+			return (Race)(c.newInstance());
 		}
 		catch(Exception e)
 		{
-			System.out.println(r + ": Race does not exist");
-			throw new NullPointerException("Race does not exist");
+			return new Race(r);
 		}
 	}
 }

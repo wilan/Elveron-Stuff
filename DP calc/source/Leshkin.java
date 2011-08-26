@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Leshkin extends Races
+public class Leshkin extends Race
 {
 	public static final double[] DP = {2, 4, 2, 7, 0, 0, 0};
 	
@@ -8,7 +8,7 @@ public class Leshkin extends Races
 
 	public Leshkin()
 	{
-		super();
+		super("Leshkin");
 		aDef = 10;
 	}
 	
@@ -41,21 +41,11 @@ public class Leshkin extends Races
 //System.out.println(imps[0] + ", " + imps[1]);
 	}
 	
-	public double extraMods()
-	{
-		return 0;
-	}
-	
-	public double extraDP()
-	{
-		return 0;
-	}
-	
 	public double getDefense(int i)
 	{
 		if(i == 4)
 			return aDef;
 		else
-			return DP[i];
+			return super.getDefense(i);
 	}
 }

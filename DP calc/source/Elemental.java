@@ -1,13 +1,12 @@
 import java.util.*;
 
-public class Elemental extends Races
+public class Elemental extends Race
 {
-	public static final double[] DP = {3, 4.5, 6, 7.5, 0, 0, 0};
 	public double[] inTraining;
 	public Elemental()
 	{
-		super();
-		inTraining = new double[Races.NUMUNITS];
+		super("Elemental");
+		inTraining = new double[Race.NUMUNITS];
 		for(int i = 0; i < inTraining.length; i++)
 			inTraining[i] = 10000000;
 	}
@@ -26,7 +25,7 @@ public class Elemental extends Races
 	double[] tempTraining;
 	public void parseSOM(Scanner s) throws Exception
 	{
-		tempTraining = new double[Races.NUMUNITS];
+		tempTraining = new double[Race.NUMUNITS];
 		super.parseSOM(s);	
 	}
 	
@@ -37,22 +36,12 @@ public class Elemental extends Races
 		inTraining = min(inTraining, tempTraining);
 	}
 	
-	public double extraMods()
-	{
-		return 0;
-	}
-	
 	public double extraDP()
 	{
 		if(inTraining != null)
 		{
-			return inTraining[1]*3/Races.OFFSET+inTraining[2]*4.5/Races.OFFSET+inTraining[3]*6/Races.OFFSET;
+			return inTraining[1]*3/Race.OFFSET+inTraining[2]*4.5/Race.OFFSET+inTraining[3]*6/Race.OFFSET;
 		}
 		return 0;
-	}
-	
-	public double getDefense(int i)
-	{
-		return DP[i];
 	}
 }

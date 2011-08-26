@@ -8,8 +8,7 @@ public class Main extends JFrame
 {
 	public static void main(String args[]) throws Exception
 	{
-		File dir1 = new File (".");
-		System.out.println ("Current dir : " + dir1.getCanonicalPath());
+		Race.initialize();
 		new Main();
 	}
 	
@@ -47,23 +46,23 @@ public class Main extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		p = new Parser();
 		
-		kyl = new JButton("Toggle Kyl/Dina (6%)");       
+		kyl = new JButton("Toggle Kyl/Dina ("+Race.DEFHEROES[Race.KYL]+"%)");       
         kyl.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				p.toggleHero(Races.KYL);
+				p.toggleHero(Race.KYL);
 				addTables();
 			}
 		});
 		
-		lsd = new JButton("Toggle LSD/Shade (5%)");       
+		lsd = new JButton("Toggle LSD/Shade ("+Race.DEFHEROES[Race.LSD]+"%)");       
         lsd.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				p.toggleHero(Races.LSD);
+				p.toggleHero(Race.LSD);
 				addTables();
 			}
 		});
 		
-		shield = new JButton("Toggle Magic Shield (5%)");       
+		shield = new JButton("Toggle Magic Shield ("+Race.SHIELD+"%)");       
         shield.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				p.toggleShield();
@@ -155,11 +154,11 @@ public class Main extends JFrame
 		topPanel.add(input);
 		
 		opsLabels = new JLabel[5];
-		opsLabels[Races.MILITARY] = new JLabel("Military Spy");
-		opsLabels[Races.LAND] = new JLabel("Land Spy");
-		opsLabels[Races.IMPROVEMENT] = new JLabel("Improvement Spy");
-		opsLabels[Races.FARSIGHT] = new JLabel("Farsight");
-		opsLabels[Races.BUILDING] = new JLabel("Building Spy");
+		opsLabels[Race.MILITARY] = new JLabel("Military Spy");
+		opsLabels[Race.LAND] = new JLabel("Land Spy");
+		opsLabels[Race.IMPROVEMENT] = new JLabel("Improvement Spy");
+		opsLabels[Race.FARSIGHT] = new JLabel("Farsight");
+		opsLabels[Race.BUILDING] = new JLabel("Building Spy");
 		opsPanel = new JPanel();
 		opsPanel.setLayout(new GridLayout(5, 1));
 		
