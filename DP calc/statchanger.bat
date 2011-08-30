@@ -1,2 +1,0 @@
-java StatChange
-./createJar.bat

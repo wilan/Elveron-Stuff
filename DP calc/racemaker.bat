@@ -1,2 +1,0 @@
-java RaceMaker
-./createJar.bat
