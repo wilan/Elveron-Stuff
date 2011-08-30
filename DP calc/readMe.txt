@@ -1,6 +1,27 @@
-How to use:
+v2.0 Notes
+-The Design has been changed now you will need the following 3 files all in the same directory:
+	stats.txt
+	DP_Calc.jar
+	stat_changer.jar
+-When a new race is added or an old race is tweaked run statchanger.
 
-0. Run the .jar file (DP_calc.jar)
+How to use stat changer:
+0. Run stat_changer.jar
+1. Remove race removes a race from selection whereas modify race allows you to change base stats.
+2. Add race can be used to add a race along with the units base stats
+
+Notes:
+-This program modifies stats.txt, if you want to modify it manually keep in mind that the program is dependent on the format which is as follows:
+RACENAME|DP|TAVERNNAME
+RACENAME: The race name all combined with the first letter capitalized, IE: Dark dwarf => DarkDwarf
+DP: The defense points of the units in order separated by space.
+TAVERNNAME: The name of the tavern for that particular race case insensative.
+-If you do not adhere to the format the program will break.
+-It is currently not possible to add complicated race like elementals or nymphs.  Someone (probably me) will have to look add a race manually through and recompile the program.
+
+How to use dp_calc:
+
+0. Run DP_Calc.jar file (DP_calc.jar)
 1. Get OP(s)
 2. Paste OP(s) (Make sure you get the part that says "Improvement Spy", "Military Spy", etc, the program parses for that)
 3. Press Calc DP
