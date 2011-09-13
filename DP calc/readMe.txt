@@ -17,7 +17,7 @@ RACENAME: The race name all combined with the first letter capitalized, IE: Dark
 DP: The defense points of the units in order separated by space.
 TAVERNNAME: The name of the tavern for that particular race case insensative.
 -If you do not adhere to the format the program will break.
--It is currently not possible to add complicated race like elementals or nymphs.  Someone (probably me) will have to look add a race manually through and recompile the program.
+-It is currently not possible to add complicated race like elementals or nymphs.  Someone (probably me) will have to add a race manually through the source code and recompile the program.
 
 How to use dp_calc:
 
@@ -29,13 +29,10 @@ How to use dp_calc:
 
 NOTES:
 -The newest ops from SOI, SOB, and FS will override the older one. SOM will pick the more "optimal" of the new one or old one.
- *Since the ops are parsed from beginning to end, how mean an op is defined as first, when it is pasted, second, where on the op list it is:
+ *Since the ops are parsed from beginning to end, "newest" is defined how close to the bottom it is pasted:
  *Example: PASTE OP: batch1 = [soi1, sob1, som1, sob2, soi2, fs1, som2], batch2 = [soi3] => relvant ops = [soi3, sob2, som1, fs1, som2]
 -Revelation does not auto toggle shield, you will have to do it your self.
--Make sure raceList.txt is in the same folder as the jar file.  It gives choices for races if you do not provide farsight.
-You could alternatively delete or add old races from the raceList.txt file. Make sure the race is case sensative and any spaces are deleted
-EX: Dark Dwarf = DwarkDwarf
--May be buggy, this is the first version.
+-Make sure stats.txt is in the same folder as the jar file.  It gives base value for all the races as well as choices for races if you do not provide farsight.
 
 The mod DP output due to bad input >>WILL NOT<< be correct.  Examples of bad inputs includes but are  not limited to the following:
 -Modification of ops (IE: changing the original nature of ops)
