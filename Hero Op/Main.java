@@ -7,10 +7,8 @@ import java.util.regex.*;
 
 public class Main extends JFrame
 {
-	private DataManager dm;
 	private JButton calc;
 	private TextArea input, output;
-	private PrintStream out;
 	
 	public Main()
 	{
@@ -18,7 +16,6 @@ public class Main extends JFrame
 		setSize(500, 500);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		dm = new DataManager();
 		
 		calc = new JButton("Calculate Op");       
         calc.addActionListener(new ActionListener() {
