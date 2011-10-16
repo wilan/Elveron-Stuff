@@ -1,0 +1,38 @@
+26646 (225) 221237 1920 weak packie[# 15] Elemental Nature 
+50690 (290) 188520 1752 Disguiser[# 17] Orc Chaos 
+55975 (534) 248816 1997 Ricochet[# 16] Orc Death 
+60162 (336) 193818 1675 Malfius[# 18] Leshkin Might 
+67516 (129) 255900 1954 apple[# 11] Leshkin Death 
+68066 (335) 215315 1742 Silencer[# 17] Vampire Chaos 
+71461 (343) 212331 1839 test packie[# 15] Human Nature 
+73027 (260) 225157 1671 Vendole[# 20] Shinobi Nature 
+76706 (399) 249136 1857 Get You One[# 27] Vampire Death 
+77213 (316) 233917 1812 Insane Humphries[# 22] Leshkin Chaos 
+77691 (439) 246357 2008 Egypt[# 4] Elemental Nature 
+79043 (435) 246048 1922 Grasshopper[# 11] Orc Death 
+80353 (462) 265402 2141 Hell[# 24] Spirit Order 
+82679 (184) 279632 1888 Exterminador do Arni[# 15] Elemental Nature 
+83092 (335) 242018 1857 KumanBG[# 20] Human Nature 
+84607 (421) 258380 2093 PeeontheWall[# 24] Spirit Order 
+84624 (496) 277858 2204 Syria[# 4] Human Nature 
+85340 (372) 260775 1996 Daily Double[# 11] Leshkin Death 
+86227 (372) 263597 2150 Chernobyl[# 27] Troll Death 
+91058 (133) 257664 1790 Rudhon[# 11] Frostzorb Death 
+92884 (345) 251321 1972 Dienekes[# 18] Vampire Might 
+93294 (200) 248905 1776 Little Big Horn[# 27] Vampire Death 
+93472 (375) 282100 2193 Stonehenge[# 5] Elemental Nature 
+93908 (402) 288232 2151 Robin Soderling[# 19] Human Nature 
+93965 (180) 269603 2090 The Stick[# 16] Leshkin Death 
+96792 (590) 315891 2432 Bipolar[# 16] Vampire Death 
+98944 (144) 259504 1758 Why Freikorps? Why?[# 27] Frostzorb Death 
+99381 (473) 315374 2332 Brie Whitehead[# 19] Elemental Nature 
+101306 (435) 296745 2158 Insane Travis[# 22] Leshkin Chaos 
+101840 (454) 257060 2062 Insane Memphis[# 22] Orc Chaos 
+103963 (690) 268946 2238 Goran Ivanisevic[# 19] Elf Nature 
+104495 (466) 289362 2317 Algeria[# 4] Human Nature 
+106308 (651) 295880 2209 Kondom des Grauens[# 16] Leshkin Death 
+107060 (572) 284912 2109 Missed the Boat[# 27] Frostzorb Death 
+109299 (738) 297309 2659 slacker packie[# 15] Human Nature 
+114044 (493) 328580 2321 Tunisia[# 4] Spirit Nature 
+116859 (545) 311275 2344 Pizza Hut[# 73] Vampire Chaos 
+118476 (721) 313314 2473 Infinity[# 11] FlameWeaver Death 
