@@ -111,6 +111,11 @@ public class Parser
 				System.out.println("Mil");
 				kingdom.parseSOM(s);
 			}
+			if(word.equals("Land"))
+			{
+				System.out.println("Land");
+				kingdom.parseSOL(s);
+			}
 		}
 		return true;
 	}

@@ -83,6 +83,11 @@ public class Race
 		return !ops[i];
 	}
 	
+	public void parseSOL(Scanner s) throws Exception
+	{
+		ops[LAND] = true;
+	}
+	
 	public void parseFS(Scanner s) throws Exception
 	{
 		//extract the unit numbers
